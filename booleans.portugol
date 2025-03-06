@@ -1,0 +1,43 @@
+// desafio 1
+
+programa {
+  funcao inicio() {
+    
+    inteiro idade1
+    inteiro idade2
+    leia(idade1)
+    leia(idade2)
+
+    se (idade1 > idade2)
+    escreva("a maior idade é idade 1")
+
+
+    se(idade2 > idade1)
+    escreva("idade 2 maior que idade 1" "\n")
+
+
+  }
+}
+
+
+// desafio 2
+
+programa {
+  funcao inicio() {
+    
+  inteiro numero
+
+  leia(numero)
+  se (numero > 0)
+  escreva("numero positivo")
+
+  se(numero == 0)
+  escreva("numero 0")
+
+  se(numero < 0)
+  escreva("numero negativo" "\n")
+
+  }
+}
+
+// desafio 3
