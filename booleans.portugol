@@ -13,7 +13,7 @@ programa {
 
 
     se(idade2 > idade1)
-    escreva("idade 2 maior que idade 1" "\n")
+    escreva("idade 2 maior que idade 1 \n")
 
 
   }
@@ -35,9 +35,94 @@ programa {
   escreva("numero 0")
 
   se(numero < 0)
-  escreva("numero negativo" "\n")
+  escreva("numero negativo \n")
 
   }
 }
 
 // desafio 3
+
+programa {
+  funcao inicio() {
+    inteiro numero1, numero2, numero3
+
+
+    escreva("digite 3 valores: ")
+
+    leia (numero1)
+    leia (numero2)
+    leia (numero3)
+
+    se (numero1 > numero2 e numero1 > numero3) {
+       escreva ("numero ", numero1, " é o maior")
+    }
+
+    senao se (numero2 > numero1 e numero2 > numero3) {
+       escreva ("numero ", numero2, " é o maior")
+    }
+
+    senao {
+        escreva("numero ", numero3, " é o maior \n")
+
+    }
+
+
+  }
+}
+// desafio 4
+
+  programa {
+  funcao inicio() {
+    
+    inteiro numero1,  numero2, numero3
+
+    escreva("digite 3 numeros: ")
+
+    leia(numero1)
+    leia(numero2)
+    leia(numero3)     
+
+    se (numero1 < numero2 e numero3){
+
+      escreva(numero2 + numero3)
+
+    }
+
+    senao se (numero2 < numero1 e numero3){
+
+      escreva (numero1 + numero3)
+
+    }
+
+    senao {
+      escreva(numero3 + numero1, "\n")
+
+    }
+
+
+  }
+}
+// desafio 5
+
+programa {
+  funcao inicio() {
+    
+    inteiro num1, num2, num3, num3, num4, num5, num6
+      inteiro soma 
+      escreva("digite 6 numeros: ")
+
+    leia(num1)
+    leia(num2)
+    leia(num3)
+    leia(num4)
+    leia(num5)
+    leia(num6)
+
+
+    soma = num1 + num2 + num3 + num3 + num4 + num5 + num6
+    escreva(soma / 6, "\n")  
+
+  }
+}
+
+// deafio 6
