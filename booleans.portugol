@@ -126,3 +126,249 @@ programa {
 }
 
 // deafio 6
+
+programa {
+  funcao inicio() {
+    
+    escreva("escreva 4 numeros: ")
+    inteiro num1, num2, num3, num4
+
+    leia(num1, num2, num3, num4)
+    escreva("primero numero: ", num1, "\n", "ultimo numero: ", num4, "\n")
+
+    se (num1 > num2 e num1 > num3 e num1 > num4){
+
+        escreva("maior numero: ", num1)
+
+    }
+        se (num2 > num1 e num2 > num3 e num2 > num4){
+
+        escreva("maior numero: ", num2)
+
+    }
+
+       senao se (num3 > num1 e num3 > num2 e num3 > num4){
+
+        escreva("maior numero: ", num3)
+
+    }
+
+    senao{
+      escreva("maior numero: ", num4, "\n")
+
+    }
+
+
+
+  }
+}
+
+// exercicio 7
+
+programa {
+  funcao inicio() {
+
+//  EPS
+//  entrada - processamento - saida
+
+    inteiro num1, num2, num3, num4, num5, num6
+    inteiro soma = 0
+
+    escreva ("informe 6 numeros diferentes: ")
+    leia(num1)
+    leia(num2)
+    leia(num3)
+    leia(num4)
+    leia(num5)
+    leia(num6)
+
+    se (num1 < 72){
+      
+      soma = soma + num1
+      escreva(num1, "\n")
+    }
+        se (num2 < 72){
+      
+      soma = soma + num2
+      escreva(num2, "\n")
+    }
+        se (num3 < 72){
+      
+      soma = soma + num3
+      escreva(num3, "\n")
+    }
+        se (num4 < 72){
+      
+      soma = soma + num4
+      escreva(num4, "\n")
+    }
+        se (num5 < 72){
+      
+      soma = soma + num5
+      escreva(num5, "\n")
+    }
+        se (num6 < 72){
+      
+      soma = soma + num6
+      escreva(num6, "\n")
+    }
+    
+       escreva("Valor da soma: ", soma, "\n")
+
+  }
+}
+
+//exer 8(feito pelo will)
+
+programa {
+  funcao inicio() {
+  real m1, m2, m3, m4
+  inteiro soma = 0
+ 
+  escreva("Nota 1: ")
+  leia(m1)
+ 
+  enquanto(m1 < 0 ou m1 > 10){
+    //Se a nota for menor que 0 ou maior que 10
+    //o programa vai pedir novamente o número
+    escreva("\nColoque um numero maior que 0 ou menor que 10\n")
+    leia(m1)
+  }
+  soma = soma + m1
+ 
+  escreva("Nota 2: ")
+  leia(m2)
+ 
+  enquanto(m2 < 0 ou m2 > 10){
+    escreva("Coloque um numero maior que 0 ou menor que 10\n")
+    leia(m2)
+  }
+  soma = soma + m2
+ 
+  escreva("Nota 3: ")
+  leia(m3)
+ 
+ 
+  enquanto(m3 < 0 ou m3 > 10){
+    escreva("Coloque um numero maior que 0 ou menor que 10\n")
+    leia(m3)
+  }
+  soma = soma + m3
+ 
+  escreva("Nota 4: ")
+  leia(m4)
+ 
+  enquanto(m4 < 0 ou m4 > 10){
+    escreva("Coloque um numero maior que 0 ou menor que 10\n")
+    leia(m4)
+  }
+  soma = soma + m4
+ 
+  real media = soma / 4
+ 
+  se(media > 5){
+    escreva("\nParabuens você passou\n")
+  } senao {
+    escreva("\nTem que estudar mais meu pareiro, você não passou\n")
+  }
+  }
+}
+
+// exer9
+
+//  EPS
+//  entrada - processamento - saida
+
+programa {
+  funcao inicio() {
+
+    inteiro ano_nascimento
+    inteiro ano_atual = 2025
+    escreva("escreva sua ano de nascimento: \n")
+
+    se(ano_nascimento < 2009)
+    {
+      escreva("voce ainda não pode votar!\n")
+    }
+    senao se (ano_nascimento >= 2009){
+      escreva("voce pode votar!\n")
+    }
+  
+  }
+}
+
+// exer 10
+
+programa {
+  funcao inicio() {
+
+    real peso_ideal
+    real altura
+    cadeia genero 
+    escreva("escreva sua altura: \n")
+      leia(altura)
+    escreva("escreva seu genero: (f)/(m)\n")
+      leia(genero)
+
+    se (genero == "f"){
+
+      escreva(altura * 62.1 - 44.7)
+    }
+      senao  se (genero == "m"){
+
+      escreva(altura * 72.7 - 58"\n")
+    }
+  }
+}
+
+//exer 11
+
+programa {
+  funcao inicio() {
+      inteiro numero1, numero2
+      inteiro operacao
+      real resultado
+      inteiro invalidez = 0 //variavel pra evitar que zero seja dividido por zero
+ 
+      escreva("Digite o 1° valor: ")
+      leia(numero1)
+      escreva("Digite o 2° valor: ")
+      leia(numero2)
+ 
+      escreva("Digite a operação: \n")
+      escreva("'1' - Adição | '2' - Subtração | '3' - Multiplicação | '4' - Divisão \n")
+      leia(operacao)
+ 
+      escolha(operacao){
+        caso 1:
+          resultado = numero1 + numero2
+          pare
+        caso 2:
+          resultado = numero1 - numero2
+          pare
+        caso 3:
+          resultado = numero1 * numero2
+          pare
+        caso 4:
+         se (numero2 !=  0){
+          resultado = numero1 / numero2
+          }
+          senao{
+           invalidez = 1
+           escreva("Operação inválida")
+          }
+          pare
+        caso contrario:
+          escreva("Numero inválido!!!")
+          pare
+        }
+ 
+        se (operacao >= 1 e operacao <= 4 e invalidez != 1)
+        escreva("Resultado é: ", resultado)
+       
+      }
+ 
+     
+  }
+}
+ 
