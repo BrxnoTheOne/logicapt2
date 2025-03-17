@@ -1,0 +1,190 @@
+// exer 1
+
+programa {
+  funcao inicio() {
+
+    inteiro contagem = 10
+    escreva("vai explodir ! em: " , contagem, "\n")
+
+    enquanto (contagem > 0){
+      contagem = contagem -1
+      escreva(contagem, "\n")
+    }
+    escreva("BOOM!")
+  }
+}
+
+//exer 2
+
+programa {
+  funcao inicio() {
+    inteiro valor1, valor2
+    escreva("digite 2 valores: \n")
+    leia(valor1, valor2)
+    
+
+    se (valor2 <= 0){
+
+      escreva("apenas valores positivos! ")
+        escreva("reinicie e digite um novo valor.\n")
+      
+    }
+    senao se (valor1 e valor2 > 0){
+
+      escreva("a sua divisão é: ", valor1 / valor2)
+    }
+
+
+  }
+}
+
+//exer 3
+
+programa {
+  funcao inicio() {
+    
+    inteiro numeros = 10
+    // leia(numeros)
+    escreva("contagem: \n", numeros, "\n")
+
+    enquanto(numeros > 1){
+      numeros = numeros - 1
+      escreva(numeros, "\n")
+
+    }
+
+  }
+}
+
+
+// exer 4
+//  EPS
+//  entrada - processamento - saida
+
+programa {
+  funcao inicio() {
+    
+    inteiro num1 = 15 , num2 = 100
+    inteiro resultado 
+    escreva(num1, "\n", num2)
+
+
+
+    resultado = (num1 + num2)/ 2 
+    escreva(resultado)
+
+  }
+}
+
+
+// exer 5 
+
+programa {
+  funcao inicio() {
+    
+    
+    inteiro num1 , num2 
+    inteiro resultado 
+    escreva("informe 2 numeros de 1 a 100: ")
+    leia(num1, num2)
+    escreva(num1, "\n", num2, "\n")
+
+    resultado = (num1 + num2)/ 2 
+    escreva("resultado: ", resultado)
+
+  }
+}
+
+
+// exer 6
+
+programa {
+  funcao inicio() {
+    
+    
+    inteiro nota1 , nota2 
+    inteiro media 
+    cadeia resposta = "sim"  "não"
+
+
+    escreva("informe a 1° nota \n")
+    leia(nota1)
+    escreva("informe a 2° nota ")
+    leia(nota2)
+
+    escreva("Calcular a média de outro aluno sim/não?")
+    leia(resposta)
+
+    se (resposta == "sim"){
+    media = (nota1 + nota2) / 2
+    escreva("resultado: ", media)
+    }
+    senao se (resposta == "nao"){
+      escreva("alunos reprovados = 0")
+    }
+
+  }
+}
+ 
+// exer 7
+
+programa {
+  funcao inicio() {
+        inteiro num1 , num2, num3, num4, num5, num6
+    inteiro resultado 
+    escreva("informe as 6 notas: ")
+    leia(num1, num2, num3, num4, num5, num6)
+    escreva("suas notas: ", num1, " ", num2, " ", num3," ",  num4," ",num5," ", num6 ,"\n")
+
+    se( num1 ou num2 ou num3 ou num4 ou num5 ou num6 < 0){
+
+    escreva("numero negativo invalido, reenvie suas notas")}
+
+    senao se( num1 ou num2 ou num3 ou num4 ou num5 ou num6 > 10){
+    escreva("numero invalido, reenvie suas notas")
+    }
+    senao {
+
+      escreva("resultado: ", (num1 + num2 + num3 + num4 + num5 + num6)/6)
+    }
+  }
+}
+
+//exer 8
+
+programa {
+  funcao inicio() {
+    
+    inteiro numF = 1 , numU
+    escreva("informe um numero positivo: ")
+  leia(numU)
+
+  se(numU > 0){
+
+    escreva((numF+numU)/2)
+  }
+    senao{
+      escreva("informe um valor positivo.")
+
+    }
+  }
+}
+
+
+exer 9
+
+programa {
+  funcao inicio() {
+    
+    inteiro numeros = 100
+    // leia(numeros)
+    escreva(numeros,"\n")
+
+    enquanto(numeros < 110){
+      numeros = numeros + 1
+
+    escreva(numeros,"\n")
+    }
+  }
+}
+
