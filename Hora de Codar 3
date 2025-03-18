@@ -187,4 +187,136 @@ programa {
     }
   }
 }
+//exer10
 
+programa {
+  funcao inicio() {
+    escreva("digite 10 idades: ")
+    inteiro valor1, valor2, valor3, valor4, valor5, valor6, valor7, valor8, valor9, valor10
+    leia(valor1, valor2, valor3, valor4, valor5, valor6, valor7, valor8, valor9, valor10)
+
+    se (valor1 >= 24 e valor1 <=42){
+
+   escreva(valor1, " esta dentro da faixa ")
+    }senao se(valor1 <24 e valor1 > 42 ){
+  escreva(valor1, " esta fora da faixa")
+}
+
+se (valor2 >= 24 e valor2 <= 42){
+  escreva(valor2, " esta dentro da faixa ")
+}senao 
+// se(valor2 <24 e valor2 > 42 ) 
+{
+  escreva(valor2, " esta fora da faixa ")
+}
+
+se(valor3 >= 24){
+  escreva(valor3, " esta dentro da faixa ")
+}
+
+se(valor4 >= 24){
+  escreva(valor4, " esta dentro da faixa ")
+}
+
+se(valor5 >= 24){
+  escreva(valor5, " esta dentro da faixa \n")
+}
+
+se(valor6 >= 24){
+  escreva(valor6, " esta dentro da faixa ")
+}
+
+se(valor7 >= 24){
+  escreva(valor7, " esta dentro da faixa ")
+}
+
+se(valor8 >= 24){
+  escreva(valor8, " esta dentro da faixa ")
+}
+
+se(valor9 >= 24){
+  escreva(valor9, " esta dentro da faixa ")
+}
+
+se(valor10 >= 24){
+  escreva(valor10, " esta dentro da faixa ")
+}
+
+///////////
+
+
+
+senao se(valor3 <24 e valor3 > 42 ){
+  escreva(valor3, " esta fora da faixa")
+}
+senao se(valor4 <24 e valor4 > 42 ){
+  escreva(valor4, " esta fora da faixa")
+}
+senao se(valor5 <24 e valor5 > 42 ){
+  escreva(valor5, " esta fora da faixa")
+}
+senao se(valor6 <24 e valor6 > 42 ){
+  escreva(valor6, " esta fora da faixa")
+}
+senao se(valor7 <24 e valor7 > 42 ){
+  escreva(valor7, " esta fora da faixa")
+}
+senao se(valor8 <24 e valor8 > 42 ){
+  escreva(valor8, " esta fora da faixa")
+}
+senao se(valor9 <24 e valor9 > 42 ){
+  escreva(valor9, " esta fora da faixa")
+}
+senao se(valor10 <24 e valor10 > 42 ){
+  escreva(valor10, " esta fora da faixa")
+}
+
+
+  }
+}
+
+//exer 11
+
+programa {
+  funcao inicio() {
+
+    inteiro numeroUsuario 
+    escreva("digite o numero que deseja multiplicar: ")
+    leia(numeroUsuario)
+
+se (numeroUsuario <=0){
+  escreva("informe apenas numeros positivos.")
+}
+senao{
+    escreva(numeroUsuario, " X ", 1, "= ")
+    escreva(numeroUsuario * 1,"\n")
+
+    escreva(numeroUsuario, " X ", 2,"= ")
+    escreva(numeroUsuario * 2,"\n")
+
+    escreva(numeroUsuario, " X ", 3,"= ")
+    escreva(numeroUsuario * 3,"\n")
+
+    escreva(numeroUsuario, " X ", 4,"= ")
+    escreva(numeroUsuario * 4,"\n")
+
+    escreva(numeroUsuario, " X ", 5,"= ")
+    escreva(numeroUsuario * 5,"\n")
+
+    escreva(numeroUsuario, " X ", 6,"= ")
+    escreva(numeroUsuario * 6,"\n")
+
+    escreva(numeroUsuario, " X ", 7,"= ")
+    escreva(numeroUsuario * 7,"\n")
+
+    escreva(numeroUsuario, " X ", 8,"= ")
+    escreva(numeroUsuario * 8,"\n")
+
+    escreva(numeroUsuario, " X ", 9,"= ")
+    escreva(numeroUsuario * 9,"\n")
+
+    escreva(numeroUsuario, " X ", 10, "= ")
+    escreva(numeroUsuario * 10,"\n")}
+
+  }
+}
